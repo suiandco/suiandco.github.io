@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sui&Co.｜マンション共用部の定期清掃（神奈川・都内）</title>
+<meta name="description" content="神奈川・都内のマンション共用部の定期清掃。ポリッシャー床洗浄・ワックス、エントランス・廊下・階段の美装。大手物件での継続実績、写真付き作業報告書。1棟・スポットから無料見積り。">
+<link rel="icon" type="image/png" href="logo_icon.png">
+<link rel="apple-touch-icon" href="logo_icon.png">
+<style>
+:root{
+  --navy:#15315c; --navy2:#1f4378; --gold:#c69a4c; --gold2:#b1842f;
+  --ink:#222831; --muted:#5d6675; --line:#e7ebf2; --bg:#f6f8fc; --tint:#eef3fb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--ink);background:#fff;line-height:1.8;-webkit-font-smoothing:antialiased;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+.eyebrow{display:inline-block;color:var(--gold2);font-size:13px;font-weight:700;letter-spacing:.18em;margin-bottom:10px}
+.eyebrow::before{content:"";display:inline-block;width:22px;height:2px;background:var(--gold);vertical-align:middle;margin-right:8px}
+h2.sec{font-size:27px;font-weight:700;color:var(--navy);line-height:1.45;margin-bottom:8px;letter-spacing:.01em}
+.sec-lead{color:var(--muted);font-size:15px;margin-bottom:34px}
+section{padding:66px 0}
+.center{text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;border-radius:13px;padding:16px 26px;font-size:16px;transition:.15s;border:none;cursor:pointer}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-tel{background:#ffd24d;color:#3a2c00}
+.btn-tel:hover{background:#ffc726}
+.btn-line{background:#06c755;color:#fff}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold2)}
+.btn-ghost{background:transparent;border:1.6px solid rgba(255,255,255,.65);color:#fff}
+.btn small{font-weight:500;font-size:12px;opacity:.85}
+
+/* header */
+header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy);font-size:19px}
+.brand img{width:38px;height:38px;border-radius:50%}
+.nav .tel{display:flex;align-items:center;gap:8px;color:var(--navy);font-weight:700}
+.nav .tel small{display:block;font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.05em}
+.nav .tel .num{font-size:18px;line-height:1.1}
+
+/* hero */
+.hero{position:relative;background:linear-gradient(105deg,rgba(12,26,49,.94) 0%,rgba(19,44,84,.86) 46%,rgba(34,72,128,.64) 100%),url('images/hero.jpg') center 72%/cover;color:#fff;overflow:hidden;padding:64px 0 76px}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(198,154,76,.28),transparent 70%)}
+.hero .wrap{position:relative;z-index:2}
+.hero .logo{width:96px;height:96px;border-radius:50%;box-shadow:0 6px 24px rgba(0,0,0,.28);margin-bottom:22px}
+.hero h1{font-size:38px;line-height:1.4;font-weight:800;letter-spacing:.01em}
+.hero h1 .hl{color:#ffd673;position:relative}
+.hero p.sub{margin:18px 0 26px;font-size:16.5px;color:#dbe5f3;max-width:640px}
+.badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
+.badges span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:999px;font-size:13.5px;font-weight:600}
+.badges svg{width:15px;height:15px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px}
+
+/* pains */
+.pains{background:var(--bg)}
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.pain{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px;position:relative}
+.pain .q{color:var(--gold2);font-weight:800;font-size:19px;margin-bottom:6px}
+.pain p{font-size:14.5px;color:var(--ink)}
+.pain-arrow{text-align:center;margin:34px 0 0;color:var(--navy);font-weight:700;font-size:17px}
+.pain-arrow span{display:inline-block;background:var(--tint);padding:10px 22px;border-radius:999px}
+
+/* reasons */
+.reason-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.reason{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 26px;box-shadow:0 6px 22px rgba(21,49,92,.05);transition:.18s}
+.reason:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(21,49,92,.1)}
+.reason .ic{width:56px;height:56px;border-radius:14px;background:var(--tint);display:flex;align-items:center;justify-content:center;color:var(--navy2);margin-bottom:16px}
+.reason .ic svg{width:30px;height:30px}
+.reason .no{color:var(--gold2);font-weight:800;font-size:13px;letter-spacing:.1em}
+.reason h3{font-size:19px;color:var(--navy);margin:3px 0 8px}
+.reason p{font-size:14.5px;color:var(--muted)}
+
+/* stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}
+.stats .n{font-size:30px;font-weight:800;color:#ffd673;line-height:1.2}
+.stats .l{font-size:13px;color:#cdd8ea;margin-top:4px}
+
+/* services */
+.services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.svc{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.svc .ic{flex:none;width:46px;height:46px;border-radius:11px;background:var(--navy);display:flex;align-items:center;justify-content:center;color:#ffd673}
+.svc .ic svg{width:24px;height:24px}
+.svc h4{font-size:16px;color:var(--navy);margin-bottom:2px}
+.svc p{font-size:13.5px;color:var(--muted)}
+
+/* cases */
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.ph{aspect-ratio:4/3;border:2px dashed #c3cde0;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#93a1bd;font-size:13px;font-weight:600;background:var(--tint);gap:6px}
+.ph svg{width:30px;height:30px}
+.case-note{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.gallery figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 5px 16px rgba(21,49,92,.07)}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.gallery figcaption{font-size:13.5px;color:var(--navy);font-weight:700;padding:11px 15px}
+
+/* price */
+.price{background:var(--tint)}
+.price-card{background:#fff;border:2px solid var(--gold);border-radius:22px;max-width:760px;margin:0 auto;padding:38px 30px;text-align:center;box-shadow:0 10px 30px rgba(198,154,76,.14)}
+.price-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:14px 0}
+.price-item{flex:1;min-width:220px;background:var(--bg);border-radius:14px;padding:20px}
+.price-item .k{font-size:14px;color:var(--muted)}
+.price-item .v{font-size:28px;font-weight:800;color:var(--navy);margin-top:4px}
+.price-item .v b{color:var(--gold2)}
+.price-foot{color:var(--muted);font-size:13.5px;margin-top:8px}
+
+/* flow */
+.flow-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 22px;position:relative}
+.step .num{position:absolute;top:-16px;left:22px;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 4px 10px rgba(198,154,76,.4)}
+.step h4{font-size:16.5px;color:var(--navy);margin:12px 0 6px}
+.step p{font-size:13.5px;color:var(--muted)}
+
+/* faq */
+.faq{background:var(--bg)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:13px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:12px;font-size:15.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";flex:none;width:28px;height:28px;border-radius:7px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px}
+.faq summary::after{content:"+";margin-left:auto;color:var(--gold2);font-size:22px;font-weight:400}
+.faq details[open] summary::after{content:"−"}
+.faq .a{padding:0 22px 20px 62px;color:var(--muted);font-size:14.5px}
+
+/* company */
+.company .info{max-width:720px;margin:0 auto;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.company dl{display:grid;grid-template-columns:140px 1fr}
+.company dt{background:var(--tint);color:var(--navy);font-weight:700;font-size:14px;padding:15px 18px;border-bottom:1px solid var(--line)}
+.company dd{font-size:14.5px;padding:15px 18px;border-bottom:1px solid var(--line)}
+
+/* final cta */
+.final{background:linear-gradient(150deg,#15315c,#26508c);color:#fff;text-align:center}
+.final h2{color:#fff;font-size:28px;margin-bottom:8px}
+.final p{color:#d3deef;margin-bottom:26px}
+.final .hero-cta{justify-content:center}
+
+footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;padding:26px 20px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;display:none;z-index:70;box-shadow:0 -3px 14px rgba(0,0,0,.16)}
+.sticky a{flex:1;text-align:center;padding:15px 6px;font-weight:800;font-size:15px}
+
+@media(max-width:760px){
+  section{padding:50px 0}
+  h2.sec{font-size:23px}
+  .hero{padding:48px 0 60px}
+  .hero h1{font-size:29px}
+  .nav .tel .num{font-size:16px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:24px 12px}
+  body{padding-bottom:62px}
+  .sticky{display:flex}
+  .company dl{grid-template-columns:104px 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="logo_icon.png" alt="Sui&Co." onerror="this.style.display='none'">Sui&amp;Co.</a>
+    <a class="tel" href="tel:08052194537">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span><small>お電話でのご相談</small><span class="num">080-5219-4537</span></span>
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <img class="logo" src="logo_icon.png" alt="Sui&Co. ロゴ" onerror="this.style.display='none'">
+    <h1>マンションの第一印象は、<br><span class="hl">"共用部"</span>で決まる。</h1>
+    <p class="sub">神奈川・都内のマンション共用部 定期清掃。ポリッシャーによる床洗浄・ワックス、エントランス・廊下・階段の美装まで。<b style="color:#fff">写真付き報告書</b>で、清掃品質がしっかり伝わります。</p>
+    <div class="badges">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#ffd673" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>大手賃貸物件 継続実績</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#ffd673" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>写真付き作業報告書</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#ffd673" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>最短即日 無料見積</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-tel" href="tel:08052194537"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話で相談する</a>
+      <a class="btn btn-ghost" href="#contact">無料見積りを依頼 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="pains">
+  <div class="wrap center">
+    <span class="eyebrow">CHECK</span>
+    <h2 class="sec">こんなお悩み、ありませんか？</h2>
+    <p class="sec-lead">マンションを管理・所有されている方から、よくいただくご相談です。</p>
+    <div class="pain-grid" style="text-align:left">
+      <div class="pain"><div class="q">Q.1</div><p>今の清掃、何をどこまでやったか<b>報告がなく</b>、品質が分からない。</p></div>
+      <div class="pain"><div class="q">Q.2</div><p>エントランスや廊下の<b>黒ずみ・ワックス劣化</b>で、建物の印象が悪い。</p></div>
+      <div class="pain"><div class="q">Q.3</div><p>清掃<b>コストは見直したい</b>。でも品質は落としたくない。</p></div>
+      <div class="pain"><div class="q">Q.4</div><p>退去後や来客前の<b>急なスポット</b>に、すぐ動ける業者がいない。</p></div>
+    </div>
+    <div class="pain-arrow"><span>その悩み、<b>Sui&amp;Co.</b> が解決します ↓</span></div>
+  </div>
+</section>
+
+<section class="reasons">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">REASON</span><h2 class="sec">Sui&amp;Co. が選ばれる理由</h2><p class="sec-lead">「品質が見える」「任せて安心」を、地域密着で。</p></div>
+    <div class="reason-grid">
+      <div class="reason">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
+        <div class="no">REASON 01</div><h3>写真付き 作業報告書</h3>
+        <p>施工前後の写真付きで毎回ご報告。オーナー様・入居者様に清掃品質が"見える化"され、説明もスムーズです。</p>
+      </div>
+      <div class="reason">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
+        <div class="no">REASON 02</div><h3>大手物件での継続実績</h3>
+        <p>大手の賃貸マンション共用部 定期清掃を継続施工中。確かな技術と段取りで、安定した仕上がりをお約束します。</p>
+      </div>
+      <div class="reason">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="no">REASON 03</div><h3>地域密着・小回り</h3>
+        <p>神奈川・都内を中心に最短即日でお見積りに伺います。退去後や来客前のスポット清掃にも柔軟に対応します。</p>
+      </div>
+      <div class="reason">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="no">REASON 04</div><h3>明朗単価・1棟から</h3>
+        <p>規模に応じた分かりやすい料金。1棟・お試し1回からご相談いただけ、無理な営業は一切いたしません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div><div class="n" style="font-size:24px">神奈川・都内</div><div class="l">対応エリア</div></div>
+    <div><div class="n">毎回</div><div class="l">写真付き報告書</div></div>
+    <div><div class="n">1棟〜</div><div class="l">スポットもOK</div></div>
+    <div><div class="n">¥0</div><div class="l">お見積り・下見</div></div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">SERVICE</span><h2 class="sec">サービス内容</h2><p class="sec-lead">共用部まわりを、まるごとおまかせいただけます。</p></div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><div><h4>床ポリッシャー洗浄＋ワックス</h4><p>共用部の床を機械洗浄し、美しく保護仕上げ。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></div><div><h4>エントランス・廊下・階段の美装</h4><p>建物の"顔"を、清潔感ある状態にキープ。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>日常巡回清掃</h4><p>ゴミ出し・拭き上げなど、定期的な巡回清掃。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16a4 4 0 0 1-.88-7.9 5 5 0 0 1 9.78-1A4.5 4.5 0 1 1 17 16z"/><path d="M12 12v6M9 15h6"/></svg></div><div><h4>退去後・高圧洗浄・ガラス清掃</h4><p>スポットの困りごとにも幅広く対応。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">WORKS</span><h2 class="sec">施工事例</h2><p class="sec-lead">神奈川・都内の現場での、実際の作業の様子と仕上がりです。</p></div>
+    <div class="gallery">
+      <figure><img src="images/g1.jpg" alt="共用廊下の床洗浄（作業中）" loading="lazy"><figcaption>共用廊下の床洗浄</figcaption></figure>
+      <figure><img src="images/g2.jpg" alt="階段のポリッシャー洗浄" loading="lazy"><figcaption>階段 ポリッシャー洗浄</figcaption></figure>
+      <figure><img src="images/g3.jpg" alt="廊下のポリッシャー洗浄" loading="lazy"><figcaption>廊下 ポリッシャー洗浄</figcaption></figure>
+      <figure><img src="images/g4.jpg" alt="清掃後の共用廊下" loading="lazy"><figcaption>共用廊下 清掃後</figcaption></figure>
+      <figure><img src="images/g5.jpg" alt="清掃後の階段" loading="lazy"><figcaption>階段 清掃後</figcaption></figure>
+      <figure><img src="images/g6.jpg" alt="廊下・階段まわりの美装" loading="lazy"><figcaption>廊下まわりの美装</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">料金の目安</h2><p class="sec-lead">建物の規模・床材・頻度により変動します。まずは無料お見積りを。</p></div>
+    <div class="price-card">
+      <div class="price-row">
+        <div class="price-item"><div class="k">床洗浄＋ワックス</div><div class="v">㎡ <b>250円〜</b></div></div>
+        <div class="price-item"><div class="k">小規模マンション共用部</div><div class="v">1回 <b>18,000円〜</b></div></div>
+      </div>
+      <p class="price-foot">頻度の目安：月1／隔月（年6回）／四半期。現地確認のうえ、確定金額をご提示します。<br>1棟・お試し1回からOK。今ご利用中の金額との比較見積りも歓迎です。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">FLOW</span><h2 class="sec">ご利用の流れ</h2><p class="sec-lead">お問い合わせから施工・報告まで、シンプルです。</p></div>
+    <div class="flow-grid">
+      <div class="step"><div class="num">1</div><h4>お問い合わせ</h4><p>お電話・LINE・フォームから。建物の所在地と規模をお伝えください。</p></div>
+      <div class="step"><div class="num">2</div><h4>無料下見・お見積り</h4><p>現地を確認し、その場で概算、後日に正式見積をご提示します。</p></div>
+      <div class="step"><div class="num">3</div><h4>施工</h4><p>ポリッシャー洗浄・ワックス等を丁寧に。1棟・お試しからOK。</p></div>
+      <div class="step"><div class="num">4</div><h4>写真付き報告</h4><p>Before/After付きの作業報告書を提出。継続もご相談ください。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">FAQ</span><h2 class="sec">よくあるご質問</h2></div>
+    <div style="max-width:760px;margin:0 auto">
+      <details open><summary>1棟だけ・1回だけでもお願いできますか？</summary><div class="a">はい、1棟・スポット1回からご依頼いただけます。まずお試しいただき、仕上がりを見て継続をご判断ください。</div></details>
+      <details><summary>見積りや下見は無料ですか？</summary><div class="a">無料です。現地を拝見し、その場で概算をお伝えします。今ご利用中の金額との比較見積りも歓迎です。</div></details>
+      <details><summary>対応エリアはどこまでですか？</summary><div class="a">神奈川県・東京都（都内）に対応しています。エリア外もまずはご相談ください。</div></details>
+      <details><summary>どのくらいの頻度がおすすめですか？</summary><div class="a">共用部の使用状況にもよりますが、床洗浄・ワックスは隔月（年6回）〜四半期、日常清掃は週1〜が一般的です。ご予算に合わせてご提案します。</div></details>
+      <details><summary>支払い方法を教えてください。</summary><div class="a">作業完了後、翌月末の銀行振込を基本としています。詳細はお見積り時にご案内します。</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="company">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">COMPANY</span><h2 class="sec">事業者概要</h2></div>
+    <div class="info">
+      <dl>
+        <dt>屋号</dt><dd>Sui&amp;Co.</dd>
+        <dt>代表</dt><dd>小山　翔</dd>
+        <dt>所在地</dt><dd>横浜市港南区</dd>
+        <dt>対応エリア</dt><dd>神奈川県・東京都（都内）</dd>
+        <dt>事業内容</dt><dd>マンション・アパート共用部の定期清掃／ポリッシャー床洗浄・ワックス／日常清掃 ほか</dd>
+        <dt>連絡先</dt><dd>TEL 080-5219-4537</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#ffd673">CONTACT</span>
+    <h2 class="sec" style="color:#fff">まずは1棟、無料お見積りから。</h2>
+    <p>「他社と比べたい」「1回だけ試したい」も大歓迎です。お気軽にご連絡ください。</p>
+    <div class="hero-cta">
+      <a class="btn btn-tel" href="tel:08052194537"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>080-5219-4537</a>
+      <a class="btn btn-line" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.02 3.58 7.39 8.41 8.03.33.07.78.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.01.89.55s5.86-3.45 8-5.91c1.47-1.62 2.18-3.27 2.18-5.4C22.41 5.64 17.93 2 12 2z"/></svg>LINEで相談</a>
+    </div>
+  </div>
+</section>
+
+<footer>© Sui&amp;Co. ｜ マンション共用部の定期清掃 ｜ 神奈川・都内</footer>
+
+<div class="sticky">
+  <a href="tel:08052194537" style="background:#ffd24d;color:#3a2c00">☎ 電話する</a>
+  <a href="#" style="background:#06c755;color:#fff">LINEで相談</a>
+</div>
+
+</body>
+</html>
