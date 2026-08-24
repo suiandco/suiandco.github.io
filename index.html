@@ -69,12 +69,20 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 
 /* pains */
 .pains{background:#fff}
-.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.pain{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px 22px;position:relative}
-.pain .q{color:var(--gold2);font-weight:800;font-size:19px;margin-bottom:6px}
-.pain p{font-size:14.5px;color:var(--ink)}
+.pains-layout{display:grid;grid-template-columns:210px 1fr;gap:36px;align-items:center;margin-top:8px}
+.pains-profile{text-align:center}
+.profile-photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);box-shadow:0 12px 28px rgba(21,49,92,.18);margin:0 auto 14px;display:block}
+.profile-name{font-weight:800;color:var(--navy);font-size:16px}
+.profile-note{font-size:13px;color:var(--muted);margin-top:3px}
+.pain-checklist{display:flex;flex-direction:column;gap:12px}
+.check-item{display:flex;align-items:flex-start;gap:13px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:15px 18px;font-size:15.5px;color:var(--ink);text-align:left}
+.check-item .ck{flex:none;width:26px;height:26px;border-radius:7px;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-top:1px}
 .pain-arrow{text-align:center;margin:34px 0 0;color:var(--navy);font-weight:700;font-size:17px}
 .pain-arrow span{display:inline-block;background:var(--tint);padding:10px 22px;border-radius:999px}
+@media(max-width:760px){
+  .pains-layout{grid-template-columns:1fr}
+  .pains-profile{margin-bottom:6px}
+}
 
 /* reasons */
 .reason-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
@@ -218,6 +226,27 @@ textarea.form-input{resize:vertical;min-height:96px}
   </div>
 </section>
 
+<section class="pains">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">CHECK</span><h2 class="sec">こんなお悩み、ありませんか？</h2><p class="sec-lead">マンション・アパートを管理・所有されている方から、よくいただくご相談です。</p></div>
+    <div class="pains-layout">
+      <div class="pains-profile">
+        <img class="profile-photo" src="images/koyama.jpg" alt="Sui&Co. 代表 小山翔">
+        <div class="profile-name">代表　小山　翔</div>
+        <div class="profile-note">お気軽にご相談ください</div>
+      </div>
+      <div class="pain-checklist">
+        <div class="check-item"><span class="ck">✓</span>今の清掃、何をどこまでやったか<b>報告がなく</b>、品質が分からない。</div>
+        <div class="check-item"><span class="ck">✓</span>エントランスや廊下の<b>黒ずみ・ワックス劣化</b>で、建物の印象が悪い。</div>
+        <div class="check-item"><span class="ck">✓</span>清掃<b>コストは見直したい</b>。でも品質は落としたくない。</div>
+        <div class="check-item"><span class="ck">✓</span>退去のたびに<b>清掃業者とエアコン業者を別々に</b>手配するのが面倒。</div>
+        <div class="check-item"><span class="ck">✓</span>退去後や来客前の<b>急なスポット</b>に、すぐ動ける業者がいない。</div>
+      </div>
+    </div>
+    <div class="pain-arrow"><span>その悩み、<b>Sui&amp;Co.</b> が解決します ↓</span></div>
+  </div>
+</section>
+
 <section class="svc-menu">
   <div class="wrap">
     <div class="center"><span class="eyebrow">MENU</span><h2 class="sec">2つのサービス</h2><p class="sec-lead">物件の"日常"も"退去時"も、まとめてご相談いただけます。</p></div>
@@ -235,22 +264,6 @@ textarea.form-input{resize:vertical;min-height:96px}
         <a class="more" href="#cleaning">詳しく見る ↓</a>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="pains">
-  <div class="wrap center">
-    <span class="eyebrow">CHECK</span>
-    <h2 class="sec">こんなお悩み、ありませんか？</h2>
-    <p class="sec-lead">マンション・アパートを管理・所有されている方から、よくいただくご相談です。</p>
-    <div class="pain-grid" style="text-align:left">
-      <div class="pain"><div class="q">Q.1</div><p>今の清掃、何をどこまでやったか<b>報告がなく</b>、品質が分からない。</p></div>
-      <div class="pain"><div class="q">Q.2</div><p>エントランスや廊下の<b>黒ずみ・ワックス劣化</b>で、建物の印象が悪い。</p></div>
-      <div class="pain"><div class="q">Q.3</div><p>清掃<b>コストは見直したい</b>。でも品質は落としたくない。</p></div>
-      <div class="pain"><div class="q">Q.4</div><p>退去のたびに<b>清掃業者とエアコン業者を別々に</b>手配するのが面倒。</p></div>
-      <div class="pain"><div class="q">Q.5</div><p>退去後や来客前の<b>急なスポット</b>に、すぐ動ける業者がいない。</p></div>
-    </div>
-    <div class="pain-arrow"><span>その悩み、<b>Sui&amp;Co.</b> が解決します ↓</span></div>
   </div>
 </section>
 
