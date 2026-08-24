@@ -117,6 +117,18 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .price-item .v{font-size:26px;font-weight:800;color:var(--navy);margin-top:4px}
 .price-item .v b{color:var(--gold2)}
 .price-foot{color:var(--muted);font-size:13.5px;margin-top:8px}
+.price-sub{font-size:16px;font-weight:700;color:var(--navy);margin:26px 0 4px;text-align:left}
+.price-sub small{display:block;font-size:12.5px;font-weight:500;color:var(--muted);margin-top:2px}
+.rate-table-wrap{overflow-x:auto}
+.rate-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13.5px}
+.rate-table th,.rate-table td{padding:11px 12px;border:1px solid var(--line);text-align:center;white-space:nowrap}
+.rate-table th{background:var(--tint);color:var(--navy);font-weight:700}
+.rate-table td.hh{background:var(--bg);font-weight:700;color:var(--navy);text-align:left}
+.base-fee-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
+.base-fee-row .item{flex:1;min-width:160px;background:var(--bg);border-radius:12px;padding:16px}
+.base-fee-row .item .k{font-size:13px;color:var(--muted)}
+.base-fee-row .item .v{font-size:20px;font-weight:800;color:var(--navy);margin-top:3px}
+.base-fee-row .item .v b{color:var(--gold2)}
 
 /* flow */
 .flow-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
@@ -295,13 +307,27 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 
 <section class="price" id="price">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">共用部清掃の料金目安</h2><p class="sec-lead">建物の規模・床材・頻度により変動します。まずは無料お見積りを。</p></div>
-    <div class="price-card">
-      <div class="price-row">
-        <div class="price-item"><div class="k">床洗浄＋ワックス</div><div class="v">㎡ <b>250円〜</b></div></div>
-        <div class="price-item"><div class="k">小規模マンション共用部</div><div class="v">1回 <b>18,000円〜</b></div></div>
+    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">共用部清掃の料金目安</h2><p class="sec-lead">世帯数タイプ・回数により料金が変わります。回数が多いほど1回あたりはお得に。まずは無料お見積りを。</p></div>
+    <div class="price-card" style="text-align:left">
+      <div class="price-sub">日常巡回清掃<small>ゴミ出し・拭き上げなどの定期巡回。世帯数タイプ別・月の回数が多いほど1回あたりが割安に。</small></div>
+      <div class="rate-table-wrap">
+        <table class="rate-table">
+          <thead><tr><th>世帯数タイプ</th><th>月1回</th><th>月2回（1回あたり）</th><th>月4回（1回あたり）</th></tr></thead>
+          <tbody>
+            <tr><td class="hh">4〜6世帯タイプ</td><td>4,000円〜</td><td>3,500円〜</td><td>2,500円〜</td></tr>
+            <tr><td class="hh">8〜10世帯タイプ</td><td>6,000円〜</td><td>5,000円〜</td><td>4,000円〜</td></tr>
+          </tbody>
+        </table>
       </div>
-      <p class="price-foot">頻度の目安：月1／隔月（年6回）／四半期。現地確認のうえ、確定金額をご提示します。<br>1棟・お試し1回からOK。今ご利用中の金額との比較見積りも歓迎です。</p>
+
+      <div class="price-sub">床洗浄・ワックス（特別清掃）<small>ポリッシャーによる床の機械洗浄＋保護仕上げ。基本料金＋世帯タイプ別の単価で算出します。</small></div>
+      <div class="base-fee-row">
+        <div class="item"><div class="k">基本料金（1回あたり）</div><div class="v"><b>8,000円〜</b></div></div>
+        <div class="item"><div class="k">＋1世帯あたり（1Rタイプ）</div><div class="v"><b>800円〜</b></div></div>
+        <div class="item"><div class="k">＋1世帯あたり（ファミリータイプ）</div><div class="v"><b>1,200円〜</b></div></div>
+      </div>
+
+      <p class="price-foot">頻度の目安：月1／隔月（年6回）／四半期。ファミリータイプは世帯あたり単価が上がります。現地確認のうえ、確定金額をご提示します。<br>1棟・お試し1回からOK。今ご利用中の金額との比較見積りも歓迎です。</p>
     </div>
   </div>
 </section>
@@ -322,11 +348,26 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 <section class="price alt">
   <div class="wrap">
     <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">退去後クリーニング × エアコンの料金目安</h2><p class="sec-lead">間取り・汚れ具合により変動します。セットでのご依頼がお得です。</p></div>
-    <div class="price-card">
-      <div class="price-row">
-        <div class="price-item"><div class="k">ハウスクリーニング（1R・1K）</div><div class="v">1件 <b>25,000円〜</b></div></div>
-        <div class="price-item"><div class="k">エアコンクリーニング（壁掛け1台）</div><div class="v">1台 <b>8,000円〜</b></div></div>
+    <div class="price-card" style="text-align:left">
+      <div class="price-sub">退去後ハウスクリーニング<small>キッチン・浴室・トイレ・洗面・居室まで、間取り別の目安料金です。</small></div>
+      <div class="rate-table-wrap">
+        <table class="rate-table">
+          <thead><tr><th>間取り</th><th>料金目安</th></tr></thead>
+          <tbody>
+            <tr><td class="hh">1R・1K</td><td>25,000円〜</td></tr>
+            <tr><td class="hh">1DK・2K</td><td>30,000円〜</td></tr>
+            <tr><td class="hh">1LDK・2DK</td><td>38,000円〜</td></tr>
+            <tr><td class="hh">2LDK・3DK</td><td>48,000円〜</td></tr>
+          </tbody>
+        </table>
       </div>
+
+      <div class="price-sub">エアコンクリーニング<small>壁掛けタイプの分解・高圧洗浄。2台目以降は割引がございます。</small></div>
+      <div class="base-fee-row">
+        <div class="item"><div class="k">1台</div><div class="v"><b>8,000円〜</b></div></div>
+        <div class="item"><div class="k">2台目以降（1台あたり）</div><div class="v"><b>1,000円引き</b></div></div>
+      </div>
+
       <p class="price-foot">間取りが大きい物件・複数台のエアコンにも対応します。まずは現地確認のうえ、確定金額をご提示します。<br>管理会社様・不動産会社様からの継続的なご依頼も歓迎です。</p>
     </div>
   </div>
