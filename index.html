@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sui&Co.｜マンション共用部の定期清掃（神奈川・都内）</title>
-<meta name="description" content="神奈川・都内のマンション共用部の定期清掃。ポリッシャー床洗浄・ワックス、エントランス・廊下・階段の美装。大手物件での継続実績、写真付き作業報告書。1棟・スポットから無料見積り。">
+<title>Sui&Co.｜共用部の定期清掃・退去後クリーニング×エアコン清掃（神奈川・都内）</title>
+<meta name="description" content="神奈川・都内のマンション・アパート向け。共用部の定期清掃（ポリッシャー床洗浄・ワックス）と、退去後ハウスクリーニング×エアコンクリーニングのセット対応。大手物件での継続実績、写真付き作業報告書。1棟・1件から無料見積り。">
 <link rel="icon" type="image/png" href="logo_icon.png">
 <link rel="apple-touch-icon" href="logo_icon.png">
 <style>
@@ -23,6 +23,7 @@ a{color:inherit;text-decoration:none}
 h2.sec{font-size:27px;font-weight:700;color:var(--navy);line-height:1.45;margin-bottom:8px;letter-spacing:.01em}
 .sec-lead{color:var(--muted);font-size:15px;margin-bottom:34px}
 section{padding:66px 0}
+section[id]{scroll-margin-top:78px}
 .center{text-align:center}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;border-radius:13px;padding:16px 26px;font-size:16px;transition:.15s;border:none;cursor:pointer}
 .btn svg{width:20px;height:20px;flex:none}
@@ -48,18 +49,28 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(198,154,76,.28),transparent 70%)}
 .hero .wrap{position:relative;z-index:2}
 .hero .logo{width:96px;height:96px;border-radius:50%;box-shadow:0 6px 24px rgba(0,0,0,.28);margin-bottom:22px}
-.hero h1{font-size:38px;line-height:1.4;font-weight:800;letter-spacing:.01em}
+.hero h1{font-size:36px;line-height:1.42;font-weight:800;letter-spacing:.01em}
 .hero h1 .hl{color:#ffd673;position:relative}
-.hero p.sub{margin:18px 0 26px;font-size:16.5px;color:#dbe5f3;max-width:640px}
+.hero p.sub{margin:18px 0 26px;font-size:16.5px;color:#dbe5f3;max-width:660px}
 .badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:30px}
 .badges span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:999px;font-size:13.5px;font-weight:600}
 .badges svg{width:15px;height:15px}
 .hero-cta{display:flex;flex-wrap:wrap;gap:13px}
 
+/* service menu (2 pillars) */
+.svc-menu{background:var(--bg)}
+.svc-menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.svc-menu-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 28px;box-shadow:0 8px 26px rgba(21,49,92,.07);display:flex;flex-direction:column;gap:10px;transition:.18s}
+.svc-menu-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(21,49,92,.12)}
+.svc-menu-card .tag{display:inline-block;background:var(--tint);color:var(--navy2);font-weight:700;font-size:12px;padding:5px 12px;border-radius:999px;align-self:flex-start;letter-spacing:.04em}
+.svc-menu-card h3{font-size:20px;color:var(--navy);margin-top:2px}
+.svc-menu-card p{font-size:14px;color:var(--muted)}
+.svc-menu-card .more{margin-top:6px;font-weight:700;color:var(--gold2);font-size:14px}
+
 /* pains */
-.pains{background:var(--bg)}
+.pains{background:#fff}
 .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
-.pain{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 22px;position:relative}
+.pain{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px 22px;position:relative}
 .pain .q{color:var(--gold2);font-weight:800;font-size:19px;margin-bottom:6px}
 .pain p{font-size:14.5px;color:var(--ink)}
 .pain-arrow{text-align:center;margin:34px 0 0;color:var(--navy);font-weight:700;font-size:17px}
@@ -78,7 +89,7 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 /* stats */
 .stats{background:var(--navy);color:#fff}
 .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}
-.stats .n{font-size:30px;font-weight:800;color:#ffd673;line-height:1.2}
+.stats .n{font-size:26px;font-weight:800;color:#ffd673;line-height:1.2}
 .stats .l{font-size:13px;color:#cdd8ea;margin-top:4px}
 
 /* services */
@@ -91,10 +102,6 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .svc p{font-size:13.5px;color:var(--muted)}
 
 /* cases */
-.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
-.ph{aspect-ratio:4/3;border:2px dashed #c3cde0;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#93a1bd;font-size:13px;font-weight:600;background:var(--tint);gap:6px}
-.ph svg{width:30px;height:30px}
-.case-note{text-align:center;color:var(--muted);font-size:13px;margin-top:16px}
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
 .gallery figure{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 5px 16px rgba(21,49,92,.07)}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
@@ -102,11 +109,12 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 
 /* price */
 .price{background:var(--tint)}
+.price.alt{background:#fff}
 .price-card{background:#fff;border:2px solid var(--gold);border-radius:22px;max-width:760px;margin:0 auto;padding:38px 30px;text-align:center;box-shadow:0 10px 30px rgba(198,154,76,.14)}
 .price-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin:14px 0}
-.price-item{flex:1;min-width:220px;background:var(--bg);border-radius:14px;padding:20px}
+.price-item{flex:1;min-width:200px;background:var(--bg);border-radius:14px;padding:20px}
 .price-item .k{font-size:14px;color:var(--muted)}
-.price-item .v{font-size:28px;font-weight:800;color:var(--navy);margin-top:4px}
+.price-item .v{font-size:26px;font-weight:800;color:var(--navy);margin-top:4px}
 .price-item .v b{color:var(--gold2)}
 .price-foot{color:var(--muted);font-size:13.5px;margin-top:8px}
 
@@ -148,7 +156,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
   section{padding:50px 0}
   h2.sec{font-size:23px}
   .hero{padding:48px 0 60px}
-  .hero h1{font-size:29px}
+  .hero h1{font-size:27px}
   .nav .tel .num{font-size:16px}
   .stats .wrap{grid-template-columns:repeat(2,1fr);gap:24px 12px}
   body{padding-bottom:62px}
@@ -172,8 +180,8 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 <section class="hero">
   <div class="wrap">
     <img class="logo" src="logo_icon.png" alt="Sui&Co. ロゴ" onerror="this.style.display='none'">
-    <h1>マンションの第一印象は、<br><span class="hl">"共用部"</span>で決まる。</h1>
-    <p class="sub">神奈川・都内のマンション共用部 定期清掃。ポリッシャーによる床洗浄・ワックス、エントランス・廊下・階段の美装まで。<b style="color:#fff">写真付き報告書</b>で、清掃品質がしっかり伝わります。</p>
+    <h1>共用部の定期清掃から、<br>退去後の<span class="hl">クリーニング＋エアコン</span>まで。</h1>
+    <p class="sub">神奈川・都内のマンション・アパートを対象に、<b style="color:#fff">共用部の定期清掃</b>と、<b style="color:#fff">退去後ハウスクリーニング×エアコンクリーニング</b>をワンストップでご依頼いただけます。写真付き報告書で、清掃品質がしっかり伝わります。</p>
     <div class="badges">
       <span><svg viewBox="0 0 24 24" fill="none" stroke="#ffd673" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>大手賃貸物件 継続実績</span>
       <span><svg viewBox="0 0 24 24" fill="none" stroke="#ffd673" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>写真付き作業報告書</span>
@@ -186,16 +194,37 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
   </div>
 </section>
 
+<section class="svc-menu">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">MENU</span><h2 class="sec">2つのサービス</h2><p class="sec-lead">物件の"日常"も"退去時"も、まとめてご相談いただけます。</p></div>
+    <div class="svc-menu-grid">
+      <div class="svc-menu-card">
+        <span class="tag">SERVICE 01</span>
+        <h3>共用部の定期清掃</h3>
+        <p>ポリッシャーによる床洗浄・ワックス、エントランス・廊下・階段の美装。月1／隔月／四半期の定期契約から、1棟・お試し1回まで。</p>
+        <a class="more" href="#kyoyobu">詳しく見る ↓</a>
+      </div>
+      <div class="svc-menu-card">
+        <span class="tag">SERVICE 02</span>
+        <h3>退去後クリーニング × エアコン清掃</h3>
+        <p>退去立会い後のお部屋を、ハウスクリーニングとエアコンクリーニングまとめて1回のご依頼で対応。次の入居者募集をお急ぎの管理会社様・オーナー様に。</p>
+        <a class="more" href="#cleaning">詳しく見る ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pains">
   <div class="wrap center">
     <span class="eyebrow">CHECK</span>
     <h2 class="sec">こんなお悩み、ありませんか？</h2>
-    <p class="sec-lead">マンションを管理・所有されている方から、よくいただくご相談です。</p>
+    <p class="sec-lead">マンション・アパートを管理・所有されている方から、よくいただくご相談です。</p>
     <div class="pain-grid" style="text-align:left">
       <div class="pain"><div class="q">Q.1</div><p>今の清掃、何をどこまでやったか<b>報告がなく</b>、品質が分からない。</p></div>
       <div class="pain"><div class="q">Q.2</div><p>エントランスや廊下の<b>黒ずみ・ワックス劣化</b>で、建物の印象が悪い。</p></div>
       <div class="pain"><div class="q">Q.3</div><p>清掃<b>コストは見直したい</b>。でも品質は落としたくない。</p></div>
-      <div class="pain"><div class="q">Q.4</div><p>退去後や来客前の<b>急なスポット</b>に、すぐ動ける業者がいない。</p></div>
+      <div class="pain"><div class="q">Q.4</div><p>退去のたびに<b>清掃業者とエアコン業者を別々に</b>手配するのが面倒。</p></div>
+      <div class="pain"><div class="q">Q.5</div><p>退去後や来客前の<b>急なスポット</b>に、すぐ動ける業者がいない。</p></div>
     </div>
     <div class="pain-arrow"><span>その悩み、<b>Sui&amp;Co.</b> が解決します ↓</span></div>
   </div>
@@ -208,7 +237,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
       <div class="reason">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg></div>
         <div class="no">REASON 01</div><h3>写真付き 作業報告書</h3>
-        <p>施工前後の写真付きで毎回ご報告。オーナー様・入居者様に清掃品質が"見える化"され、説明もスムーズです。</p>
+        <p>施工前後の写真付きで毎回ご報告。オーナー様・管理会社様に清掃品質が"見える化"され、説明もスムーズです。</p>
       </div>
       <div class="reason">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg></div>
@@ -218,12 +247,12 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
       <div class="reason">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
         <div class="no">REASON 03</div><h3>地域密着・小回り</h3>
-        <p>神奈川・都内を中心に最短即日でお見積りに伺います。退去後や来客前のスポット清掃にも柔軟に対応します。</p>
+        <p>神奈川・都内を中心に最短即日でお見積りに伺います。退去後や来客前のスポット対応にも柔軟に動きます。</p>
       </div>
       <div class="reason">
         <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <div class="no">REASON 04</div><h3>明朗単価・1棟から</h3>
-        <p>規模に応じた分かりやすい料金。1棟・お試し1回からご相談いただけ、無理な営業は一切いたしません。</p>
+        <div class="no">REASON 04</div><h3>明朗単価・1棟／1件から</h3>
+        <p>規模に応じた分かりやすい料金。1棟・お試し1回、退去後クリーニングは1件からご相談いただけ、無理な営業は一切いたしません。</p>
       </div>
     </div>
   </div>
@@ -231,21 +260,21 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 
 <section class="stats">
   <div class="wrap">
-    <div><div class="n" style="font-size:24px">神奈川・都内</div><div class="l">対応エリア</div></div>
+    <div><div class="n" style="font-size:22px">神奈川・都内</div><div class="l">対応エリア</div></div>
     <div><div class="n">毎回</div><div class="l">写真付き報告書</div></div>
-    <div><div class="n">1棟〜</div><div class="l">スポットもOK</div></div>
+    <div><div class="n" style="font-size:22px">1棟／1件〜</div><div class="l">スポットもOK</div></div>
     <div><div class="n">¥0</div><div class="l">お見積り・下見</div></div>
   </div>
 </section>
 
-<section class="services">
+<section class="services" id="kyoyobu">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">SERVICE</span><h2 class="sec">サービス内容</h2><p class="sec-lead">共用部まわりを、まるごとおまかせいただけます。</p></div>
+    <div class="center"><span class="eyebrow">SERVICE 01</span><h2 class="sec">共用部の定期清掃</h2><p class="sec-lead">共用部まわりを、まるごとおまかせいただけます。</p></div>
     <div class="svc-grid">
       <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3 2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><div><h4>床ポリッシャー洗浄＋ワックス</h4><p>共用部の床を機械洗浄し、美しく保護仕上げ。</p></div></div>
       <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></div><div><h4>エントランス・廊下・階段の美装</h4><p>建物の"顔"を、清潔感ある状態にキープ。</p></div></div>
       <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><h4>日常巡回清掃</h4><p>ゴミ出し・拭き上げなど、定期的な巡回清掃。</p></div></div>
-      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16a4 4 0 0 1-.88-7.9 5 5 0 0 1 9.78-1A4.5 4.5 0 1 1 17 16z"/><path d="M12 12v6M9 15h6"/></svg></div><div><h4>退去後・高圧洗浄・ガラス清掃</h4><p>スポットの困りごとにも幅広く対応。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16a4 4 0 0 1-.88-7.9 5 5 0 0 1 9.78-1A4.5 4.5 0 1 1 17 16z"/><path d="M12 12v6M9 15h6"/></svg></div><div><h4>高圧洗浄・ガラス清掃</h4><p>スポットの困りごとにも幅広く対応。</p></div></div>
     </div>
   </div>
 </section>
@@ -266,7 +295,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 
 <section class="price" id="price">
   <div class="wrap">
-    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">料金の目安</h2><p class="sec-lead">建物の規模・床材・頻度により変動します。まずは無料お見積りを。</p></div>
+    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">共用部清掃の料金目安</h2><p class="sec-lead">建物の規模・床材・頻度により変動します。まずは無料お見積りを。</p></div>
     <div class="price-card">
       <div class="price-row">
         <div class="price-item"><div class="k">床洗浄＋ワックス</div><div class="v">㎡ <b>250円〜</b></div></div>
@@ -277,13 +306,39 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
   </div>
 </section>
 
+<section class="services" id="cleaning" style="background:#fff">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">SERVICE 02</span><h2 class="sec">退去後クリーニング × エアコン清掃</h2><p class="sec-lead">退去立会い後のお部屋を、清掃とエアコンクリーニングまとめて1回のご依頼で。</p></div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg></div><div><h4>退去後ハウスクリーニング</h4><p>キッチン・浴室・トイレ・洗面・居室まで、次の入居者を迎えられる状態に。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="8" rx="2"/><path d="M6 18h.01M10 18h.01"/></svg></div><div><h4>エアコンクリーニング</h4><p>壁掛けタイプの分解・高圧洗浄。ニオイ・カビ・ホコリをしっかり除去。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"/></svg></div><div><h4>まとめて1回のご連絡で完結</h4><p>清掃業者とエアコン業者を別々に手配する手間をなくします。</p></div></div>
+      <div class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div><div><h4>消臭・抗菌コート等オプション</h4><p>ご要望に応じて追加対応。管理会社様・オーナー様のご要望に合わせます。</p></div></div>
+    </div>
+    <p class="center" style="margin-top:28px;color:var(--muted);font-size:13.5px">オンライン予約サイトでも継続してご依頼をいただいており、高い評価をいただいています。</p>
+  </div>
+</section>
+
+<section class="price alt">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">PRICE</span><h2 class="sec">退去後クリーニング × エアコンの料金目安</h2><p class="sec-lead">間取り・汚れ具合により変動します。セットでのご依頼がお得です。</p></div>
+    <div class="price-card">
+      <div class="price-row">
+        <div class="price-item"><div class="k">ハウスクリーニング（1R・1K）</div><div class="v">1件 <b>25,000円〜</b></div></div>
+        <div class="price-item"><div class="k">エアコンクリーニング（壁掛け1台）</div><div class="v">1台 <b>8,000円〜</b></div></div>
+      </div>
+      <p class="price-foot">間取りが大きい物件・複数台のエアコンにも対応します。まずは現地確認のうえ、確定金額をご提示します。<br>管理会社様・不動産会社様からの継続的なご依頼も歓迎です。</p>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <div class="center"><span class="eyebrow">FLOW</span><h2 class="sec">ご利用の流れ</h2><p class="sec-lead">お問い合わせから施工・報告まで、シンプルです。</p></div>
     <div class="flow-grid">
-      <div class="step"><div class="num">1</div><h4>お問い合わせ</h4><p>お電話・LINE・フォームから。建物の所在地と規模をお伝えください。</p></div>
+      <div class="step"><div class="num">1</div><h4>お問い合わせ</h4><p>お電話・LINE・フォームから。物件の所在地・規模・ご希望日をお伝えください。</p></div>
       <div class="step"><div class="num">2</div><h4>無料下見・お見積り</h4><p>現地を確認し、その場で概算、後日に正式見積をご提示します。</p></div>
-      <div class="step"><div class="num">3</div><h4>施工</h4><p>ポリッシャー洗浄・ワックス等を丁寧に。1棟・お試しからOK。</p></div>
+      <div class="step"><div class="num">3</div><h4>施工</h4><p>清掃・ポリッシャー洗浄・エアコンクリーニング等を丁寧に。</p></div>
       <div class="step"><div class="num">4</div><h4>写真付き報告</h4><p>Before/After付きの作業報告書を提出。継続もご相談ください。</p></div>
     </div>
   </div>
@@ -293,10 +348,12 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
   <div class="wrap">
     <div class="center"><span class="eyebrow">FAQ</span><h2 class="sec">よくあるご質問</h2></div>
     <div style="max-width:760px;margin:0 auto">
-      <details open><summary>1棟だけ・1回だけでもお願いできますか？</summary><div class="a">はい、1棟・スポット1回からご依頼いただけます。まずお試しいただき、仕上がりを見て継続をご判断ください。</div></details>
+      <details open><summary>1棟だけ・1件だけでもお願いできますか？</summary><div class="a">はい、共用部清掃は1棟・スポット1回から、退去後クリーニングは1件からご依頼いただけます。まずお試しいただき、仕上がりを見て継続をご判断ください。</div></details>
       <details><summary>見積りや下見は無料ですか？</summary><div class="a">無料です。現地を拝見し、その場で概算をお伝えします。今ご利用中の金額との比較見積りも歓迎です。</div></details>
       <details><summary>対応エリアはどこまでですか？</summary><div class="a">神奈川県・東京都（都内）に対応しています。エリア外もまずはご相談ください。</div></details>
-      <details><summary>どのくらいの頻度がおすすめですか？</summary><div class="a">共用部の使用状況にもよりますが、床洗浄・ワックスは隔月（年6回）〜四半期、日常清掃は週1〜が一般的です。ご予算に合わせてご提案します。</div></details>
+      <details><summary>管理会社・不動産会社からの継続的な依頼も可能ですか？</summary><div class="a">はい、退去のたびにご連絡いただく形でも、月あたり件数を見込んだ継続契約でも対応可能です。まずはお試し1件からご相談ください。</div></details>
+      <details><summary>退去後クリーニングとエアコン清掃は同じ日に対応できますか？</summary><div class="a">基本的に同日でまとめて対応します。日程が近ければ、清掃とエアコンを別日に分けることも可能です。</div></details>
+      <details><summary>どのくらいの頻度がおすすめですか？（共用部清掃）</summary><div class="a">共用部の使用状況にもよりますが、床洗浄・ワックスは隔月（年6回）〜四半期、日常清掃は週1〜が一般的です。ご予算に合わせてご提案します。</div></details>
       <details><summary>支払い方法を教えてください。</summary><div class="a">作業完了後、翌月末の銀行振込を基本としています。詳細はお見積り時にご案内します。</div></details>
     </div>
   </div>
@@ -311,7 +368,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
         <dt>代表</dt><dd>小山　翔</dd>
         <dt>所在地</dt><dd>横浜市港南区</dd>
         <dt>対応エリア</dt><dd>神奈川県・東京都（都内）</dd>
-        <dt>事業内容</dt><dd>マンション・アパート共用部の定期清掃／ポリッシャー床洗浄・ワックス／日常清掃 ほか</dd>
+        <dt>事業内容</dt><dd>マンション・アパート共用部の定期清掃／ポリッシャー床洗浄・ワックス／退去後ハウスクリーニング／エアコンクリーニング（壁掛けタイプ）ほか</dd>
         <dt>連絡先</dt><dd>TEL 080-5219-4537</dd>
       </dl>
     </div>
@@ -321,7 +378,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
 <section class="final" id="contact">
   <div class="wrap">
     <span class="eyebrow" style="color:#ffd673">CONTACT</span>
-    <h2 class="sec" style="color:#fff">まずは1棟、無料お見積りから。</h2>
+    <h2 class="sec" style="color:#fff">まずは1棟・1件、無料お見積りから。</h2>
     <p>「他社と比べたい」「1回だけ試したい」も大歓迎です。お気軽にご連絡ください。</p>
     <div class="hero-cta">
       <a class="btn btn-tel" href="tel:08052194537"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>080-5219-4537</a>
@@ -330,7 +387,7 @@ footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;paddi
   </div>
 </section>
 
-<footer>© Sui&amp;Co. ｜ マンション共用部の定期清掃 ｜ 神奈川・都内</footer>
+<footer>© Sui&amp;Co. ｜ 共用部の定期清掃・退去後クリーニング×エアコン清掃 ｜ 神奈川・都内</footer>
 
 <div class="sticky">
   <a href="tel:08052194537" style="background:#ffd24d;color:#3a2c00">☎ 電話する</a>
