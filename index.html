@@ -168,6 +168,10 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);bac
 .final .hero-cta{justify-content:center}
 
 footer{background:#102342;color:#9fb0cc;text-align:center;font-size:12.5px;padding:26px 20px}
+.footer-social{display:flex;justify-content:center;gap:14px;margin-bottom:14px}
+.footer-social a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);color:#9fb0cc;transition:background .2s,color .2s}
+.footer-social a:hover{background:rgba(255,255,255,.16);color:#ffd673}
+.footer-social svg{width:17px;height:17px}
 
 /* inquiry form */
 .form-card{background:#fff;border-radius:22px;padding:34px 30px;max-width:600px;margin:34px auto 0;text-align:left;box-shadow:0 14px 40px rgba(0,0,0,.25)}
@@ -472,7 +476,14 @@ textarea.form-input{resize:vertical;min-height:96px}
   </div>
 </section>
 
-<footer>© Sui&amp;Co. ｜ 共用部の定期清掃・退去後クリーニング×エアコン清掃 ｜ 神奈川・都内</footer>
+<footer>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/sui.and.co/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    </a>
+  </div>
+  © Sui&amp;Co. ｜ 共用部の定期清掃・退去後クリーニング×エアコン清掃 ｜ 神奈川・都内
+</footer>
 
 <div class="sticky">
   <a href="tel:08052194537" style="background:#ffd24d;color:#3a2c00">☎ 電話する</a>
